@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YieldPredict AI - Crop Yield Forecasting</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">🌾 YieldPredict AI</div>
+        <div class="nav-subtitle">Crop Yield Forecasting & Insurance Risk Analyzer</div>
+    </nav>
+
+    <div class="container">
+        <div class="input-section">
+            <h2>Input Parameters</h2>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="district">District</label>
+                    <select id="district">
+                        <option>Guntur</option><option>Krishna</option><option>East Godavari</option>
+                        <option>West Godavari</option><option>Prakasam</option><option>Chittoor</option>
+                        <option>Anantapur</option><option>Kurnool</option><option>Nellore</option>
+                        <option>Kadapa</option><option>Srikakulam</option><option>Vizianagaram</option>
+                        <option>Visakhapatnam</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="crop">Crop</label>
+                    <select id="crop">
+                        <option>Rice</option><option>Wheat</option><option>Maize</option>
+                        <option>Cotton</option><option>Sugarcane</option><option>Groundnut</option>
+                        <option>Soybean</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="month">Sowing Month</label>
+                    <select id="month">
+                        <option value="1">January</option><option value="2">February</option>
+                        <option value="3">March</option><option value="4">April</option>
+                        <option value="5">May</option><option value="6" selected>June</option>
+                        <option value="7">July</option><option value="8">August</option>
+                        <option value="9">September</option><option value="10">October</option>
+                        <option value="11">November</option><option value="12">December</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="irrigation">Irrigation (%)</label>
+                    <input type="range" id="irrigation" min="0" max="100" value="60">
+                    <span id="irrigation-val">60%</span>
+                </div>
+                <div class="form-group">
+                    <label for="fertilizer">Fertilizer (kg/ha)</label>
+                    <input type="range" id="fertilizer" min="0" max="300" value="150">
+                    <span id="fertilizer-val">150 kg</span>
+                </div>
+                <div class="form-group">
+                    <label for="pest">Pest History</label>
+                    <select id="pest">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn-predict" onclick="runPrediction()">🔮 Predict Yield & Risk</button>
+        </div>
+
+        <div id="loading" class="loading" style="display:none;">
+            <div class="spinner"></div>
+            <p>🤖 Agents analyzing your farm data...</p>
+        </div>
+
+        <div id="results" class="results-section" style="display:none;">
+            <div class="result-header">
+                <h2>📊 Prediction Results</h2>
+                <span id="district-display" class="badge"></span>
+                <span id="crop-display" class="badge"></span>
+                <span id="model-badge" class="badge model-badge" style="display:none;"></span>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card yield-card">
+                    <h3>🌾 Yield Forecast</h3>
+                    <div class="big-number" id="yield-value">--</div>
+                    <div class="unit">tonnes per hectare</div>
+                    <div class="comparison" id="yield-comparison"></div>
+                </div>
+                <div class="card risk-card">
+                    <h3>⚠️ Insurance Risk Score</h3>
+                    <div class="big-number" id="risk-score">--</div>
+                    <div class="unit">/10</div>
+                    <div class="confidence" id="risk-confidence"></div>
+                </div>
+                <div class="card premium-card">
+                    <h3>💰 Premium Estimate</h3>
+                    <div class="big-number" id="premium-value">--</div>
+                    <div class="unit">₹ per hectare</div>
+                    <div class="rate" id="premium-rate"></div>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Stage-wise Yield Prediction</h3>
+                    <canvas id="stageChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Yield vs Last 5 Years Avg</h3>
+                    <canvas id="comparisonChart"></canvas>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-card full-width">
+                    <h3>Climate Change Impact Simulation</h3>
+                    <canvas id="climateChart"></canvas>
+                </div>
+            </div>
+
+            <div class="stats-bar">
+                <div class="stat-card"><span class="stat-number" id="stat-districts">646</span><span class="stat-label">Districts</span></div>
+                <div class="stat-card"><span class="stat-number" id="stat-crops">77</span><span class="stat-label">Crops</span></div>
+                <div class="stat-card"><span class="stat-number" id="stat-records">235K</span><span class="stat-label">Records</span></div>
+                <div class="stat-card"><span class="stat-number" id="stat-models">47</span><span class="stat-label">Crop Models</span></div>
+                <div class="stat-card"><span class="stat-number" id="stat-r2">0.977</span><span class="stat-label">Best R²</span></div>
+            </div>
+
+            <div class="leaderboard-section">
+                <h2>🏆 Model Performance Leaderboard</h2>
+                <p class="leaderboard-subtitle">11 ML models trained on 235K real records (646 districts, 77 crops) — each crop gets its best model</p>
+                <div class="leaderboard-table-wrapper">
+                    <table class="leaderboard-table" id="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Model</th>
+                                <th>R²</th>
+                                <th>MAE (t/ha)</th>
+                                <th>RMSE (t/ha)</th>
+                                <th>Training Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-body">
+                            <tr><td colspan="6" class="loading-row">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="explanations">
+                <div class="explanation-card">
+                    <h3>🤖 Agent Analysis</h3>
+                    <div class="agent-grid">
+                        <div class="agent-box" id="weather-agent">
+                            <h4>🌤️ Weather Agent</h4>
+                            <p id="weather-summary">Analyzing...</p>
+                        </div>
+                        <div class="agent-box" id="soil-agent">
+                            <h4>🌱 Soil Agent</h4>
+                            <p id="soil-summary">Analyzing...</p>
+                        </div>
+                        <div class="agent-box" id="history-agent">
+                            <h4>📜 History Agent</h4>
+                            <p id="history-summary">Analyzing...</p>
+                        </div>
+                        <div class="agent-box" id="risk-agent-box">
+                            <h4>🔢 Risk Agent</h4>
+                            <p id="risk-agent-summary">Analyzing...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="explanation-card">
+                    <h3>🗣️ AI Explanation for Farmer</h3>
+                    <div id="farmer-narrative" class="narrative"></div>
+                    <div id="farmer-recommendations" class="recommendations"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

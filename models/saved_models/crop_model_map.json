@@ -1,0 +1,1318 @@
+{
+  "Rice": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.725,
+    "best_mae": 0.321,
+    "n_records": 15538,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.725,
+        "mae": 0.321
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.6987,
+        "mae": 0.31
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.6807,
+        "mae": 0.34
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.6503,
+        "mae": 0.389
+      }
+    ]
+  },
+  "Maize": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.6456,
+    "best_mae": 0.489,
+    "n_records": 14586,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.6456,
+        "mae": 0.489
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.6389,
+        "mae": 0.48
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.6353,
+        "mae": 0.509
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.5229,
+        "mae": 0.621
+      }
+    ]
+  },
+  "Moong(Green Gram)": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.5947,
+    "best_mae": 0.108,
+    "n_records": 10619,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.5947,
+        "mae": 0.108
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.5743,
+        "mae": 0.107
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.5678,
+        "mae": 0.113
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.4398,
+        "mae": 0.129
+      }
+    ]
+  },
+  "Urad": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.3454,
+    "best_mae": 0.105,
+    "n_records": 10218,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.3454,
+        "mae": 0.105
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.3405,
+        "mae": 0.105
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.3212,
+        "mae": 0.11
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.2894,
+        "mae": 0.128
+      }
+    ]
+  },
+  "Sesamum": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.7814,
+    "best_mae": 0.09,
+    "n_records": 9163,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.7783,
+        "mae": 0.094
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.7814,
+        "mae": 0.09
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.6635,
+        "mae": 0.106
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.0359,
+        "mae": 0.182
+      }
+    ]
+  },
+  "Groundnut": {
+    "best_model_name": "BayesianRidge",
+    "best_r2": 0.4124,
+    "best_mae": 0.316,
+    "n_records": 9149,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.0972,
+        "mae": 0.279
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.3578,
+        "mae": 0.275
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": -0.1775,
+        "mae": 0.294
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.4124,
+        "mae": 0.316
+      }
+    ]
+  },
+  "Wheat": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.8986,
+    "best_mae": 0.222,
+    "n_records": 8337,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.8986,
+        "mae": 0.222
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.898,
+        "mae": 0.221
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.8955,
+        "mae": 0.229
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.8528,
+        "mae": 0.278
+      }
+    ]
+  },
+  "Rapeseed &Mustard": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.5888,
+    "best_mae": 0.144,
+    "n_records": 7905,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.5888,
+        "mae": 0.144
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.583,
+        "mae": 0.14
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.5777,
+        "mae": 0.148
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.5438,
+        "mae": 0.167
+      }
+    ]
+  },
+  "Arhar/Tur": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.6983,
+    "best_mae": 0.144,
+    "n_records": 7861,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.6463,
+        "mae": 0.149
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.6983,
+        "mae": 0.144
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.6954,
+        "mae": 0.15
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.5516,
+        "mae": 0.19
+      }
+    ]
+  },
+  "Gram": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.5872,
+    "best_mae": 0.139,
+    "n_records": 7639,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.5872,
+        "mae": 0.139
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.5097,
+        "mae": 0.142
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.4602,
+        "mae": 0.15
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.4291,
+        "mae": 0.179
+      }
+    ]
+  },
+  "Onion": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.7777,
+    "best_mae": 2.066,
+    "n_records": 7460,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.7777,
+        "mae": 2.066
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.7656,
+        "mae": 2.044
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.7668,
+        "mae": 2.129
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.7074,
+        "mae": 2.604
+      }
+    ]
+  },
+  "Jowar": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.5941,
+    "best_mae": 0.255,
+    "n_records": 7400,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.5941,
+        "mae": 0.255
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.575,
+        "mae": 0.249
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.5509,
+        "mae": 0.27
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.3472,
+        "mae": 0.333
+      }
+    ]
+  },
+  "Potato": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.8392,
+    "best_mae": 1.906,
+    "n_records": 7266,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.8384,
+        "mae": 1.96
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.8392,
+        "mae": 1.906
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.8334,
+        "mae": 2.038
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.7397,
+        "mae": 2.555
+      }
+    ]
+  },
+  "Sugarcane": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.8624,
+    "best_mae": 5.1,
+    "n_records": 6875,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.8606,
+        "mae": 5.259
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.8624,
+        "mae": 5.1
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.8582,
+        "mae": 5.399
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.7456,
+        "mae": 6.942
+      }
+    ]
+  },
+  "Dry chillies": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.759,
+    "best_mae": 0.358,
+    "n_records": 6756,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.759,
+        "mae": 0.358
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.7525,
+        "mae": 0.34
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.7424,
+        "mae": 0.381
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.4586,
+        "mae": 0.56
+      }
+    ]
+  },
+  "Sunflower": {
+    "best_model_name": "GradientBoosting",
+    "best_r2": 0.5806,
+    "best_mae": 0.177,
+    "n_records": 5842,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.4086,
+        "mae": 0.18
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.5677,
+        "mae": 0.164
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.5806,
+        "mae": 0.177
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.4518,
+        "mae": 0.231
+      }
+    ]
+  },
+  "Bajra": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.6837,
+    "best_mae": 0.235,
+    "n_records": 5649,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.6542,
+        "mae": 0.242
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.6837,
+        "mae": 0.235
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.5756,
+        "mae": 0.254
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.4717,
+        "mae": 0.303
+      }
+    ]
+  },
+  "Small millets": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.3553,
+    "best_mae": 0.159,
+    "n_records": 4834,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.3553,
+        "mae": 0.159
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.2532,
+        "mae": 0.166
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.1329,
+        "mae": 0.187
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.1717,
+        "mae": 0.2
+      }
+    ]
+  },
+  "Linseed": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.7929,
+    "best_mae": 0.065,
+    "n_records": 4709,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.7824,
+        "mae": 0.069
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.7929,
+        "mae": 0.065
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.7774,
+        "mae": 0.073
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.6405,
+        "mae": 0.102
+      }
+    ]
+  },
+  "Peas & beans (Pulses)": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.8542,
+    "best_mae": 0.19,
+    "n_records": 4687,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.8424,
+        "mae": 0.203
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.8542,
+        "mae": 0.19
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.8507,
+        "mae": 0.209
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.833,
+        "mae": 0.253
+      }
+    ]
+  },
+  "Cotton(lint)": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.977,
+    "best_mae": 0.367,
+    "n_records": 4503,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.9732,
+        "mae": 0.381
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.977,
+        "mae": 0.367
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.9717,
+        "mae": 0.405
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.1105,
+        "mae": 1.185
+      }
+    ]
+  },
+  "Barley": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.8141,
+    "best_mae": 0.219,
+    "n_records": 4426,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.8141,
+        "mae": 0.219
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.8119,
+        "mae": 0.209
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.8059,
+        "mae": 0.229
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.7504,
+        "mae": 0.283
+      }
+    ]
+  },
+  "Masoor": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.6327,
+    "best_mae": 0.12,
+    "n_records": 4418,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.6106,
+        "mae": 0.126
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.6327,
+        "mae": 0.12
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.5948,
+        "mae": 0.128
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.5052,
+        "mae": 0.149
+      }
+    ]
+  },
+  "Turmeric": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.8862,
+    "best_mae": 0.346,
+    "n_records": 4361,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.863,
+        "mae": 0.393
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.8862,
+        "mae": 0.346
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.8774,
+        "mae": 0.406
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.7797,
+        "mae": 0.601
+      }
+    ]
+  },
+  "Sweet potato": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.8803,
+    "best_mae": 0.797,
+    "n_records": 4328,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.8675,
+        "mae": 0.847
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.8803,
+        "mae": 0.797
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.8697,
+        "mae": 0.895
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.7936,
+        "mae": 1.359
+      }
+    ]
+  },
+  "Ragi": {
+    "best_model_name": "GradientBoosting",
+    "best_r2": 0.7315,
+    "best_mae": 0.222,
+    "n_records": 4218,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.7215,
+        "mae": 0.222
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.7308,
+        "mae": 0.217
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.7315,
+        "mae": 0.222
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.6653,
+        "mae": 0.26
+      }
+    ]
+  },
+  "Horse-gram": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.7192,
+    "best_mae": 0.071,
+    "n_records": 4126,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.7158,
+        "mae": 0.073
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.7192,
+        "mae": 0.071
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.7025,
+        "mae": 0.076
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.6205,
+        "mae": 0.093
+      }
+    ]
+  },
+  "Other Kharif pulses": {
+    "best_model_name": "GradientBoosting",
+    "best_r2": 0.2005,
+    "best_mae": 0.121,
+    "n_records": 3768,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.1778,
+        "mae": 0.121
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.1961,
+        "mae": 0.115
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.2005,
+        "mae": 0.121
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.1651,
+        "mae": 0.162
+      }
+    ]
+  },
+  "Coriander": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.7311,
+    "best_mae": 0.065,
+    "n_records": 3562,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.7311,
+        "mae": 0.065
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.6703,
+        "mae": 0.062
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.6952,
+        "mae": 0.068
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.5738,
+        "mae": 0.113
+      }
+    ]
+  },
+  "Garlic": {
+    "best_model_name": "GradientBoosting",
+    "best_r2": 0.7515,
+    "best_mae": 0.541,
+    "n_records": 3473,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.7148,
+        "mae": 0.54
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.7389,
+        "mae": 0.516
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.7515,
+        "mae": 0.541
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.7055,
+        "mae": 0.757
+      }
+    ]
+  },
+  "Soyabean": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.5029,
+    "best_mae": 0.184,
+    "n_records": 3397,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.2706,
+        "mae": 0.192
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.5029,
+        "mae": 0.184
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.4731,
+        "mae": 0.192
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.306,
+        "mae": 0.252
+      }
+    ]
+  },
+  "Castor seed": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.5476,
+    "best_mae": 0.174,
+    "n_records": 3353,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.5475,
+        "mae": 0.176
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.5476,
+        "mae": 0.174
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.4899,
+        "mae": 0.184
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.5152,
+        "mae": 0.212
+      }
+    ]
+  },
+  "Other  Rabi pulses": {
+    "best_model_name": "BayesianRidge",
+    "best_r2": 0.2329,
+    "best_mae": 0.211,
+    "n_records": 3210,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.1684,
+        "mae": 0.168
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.1789,
+        "mae": 0.166
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.1144,
+        "mae": 0.177
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.2329,
+        "mae": 0.211
+      }
+    ]
+  },
+  "Banana": {
+    "best_model_name": "GradientBoosting",
+    "best_r2": 0.8381,
+    "best_mae": 4.142,
+    "n_records": 3143,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.8339,
+        "mae": 4.013
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.8325,
+        "mae": 3.853
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.8381,
+        "mae": 4.142
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.7522,
+        "mae": 5.437
+      }
+    ]
+  },
+  "Dry ginger": {
+    "best_model_name": "GradientBoosting",
+    "best_r2": 0.96,
+    "best_mae": 0.645,
+    "n_records": 3093,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.9566,
+        "mae": 0.646
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.9574,
+        "mae": 0.595
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.96,
+        "mae": 0.645
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.7111,
+        "mae": 1.902
+      }
+    ]
+  },
+  "Tobacco": {
+    "best_model_name": "GradientBoosting",
+    "best_r2": 0.9142,
+    "best_mae": 0.308,
+    "n_records": 2714,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.9128,
+        "mae": 0.3
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.9098,
+        "mae": 0.296
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.9142,
+        "mae": 0.308
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.8649,
+        "mae": 0.446
+      }
+    ]
+  },
+  "Sannhamp": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.3231,
+    "best_mae": 0.368,
+    "n_records": 2327,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.2655,
+        "mae": 0.393
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.3231,
+        "mae": 0.368
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.2716,
+        "mae": 0.397
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.2151,
+        "mae": 0.599
+      }
+    ]
+  },
+  "Niger seed": {
+    "best_model_name": "BayesianRidge",
+    "best_r2": 0.02,
+    "best_mae": 0.264,
+    "n_records": 2172,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.0171,
+        "mae": 0.241
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.0056,
+        "mae": 0.24
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.0076,
+        "mae": 0.25
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.02,
+        "mae": 0.264
+      }
+    ]
+  },
+  "Mesta": {
+    "best_model_name": "GradientBoosting",
+    "best_r2": 0.7717,
+    "best_mae": 0.8,
+    "n_records": 1841,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.7691,
+        "mae": 0.794
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.6435,
+        "mae": 0.865
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.7717,
+        "mae": 0.8
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.4831,
+        "mae": 1.216
+      }
+    ]
+  },
+  "Tapioca": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.9632,
+    "best_mae": 1.327,
+    "n_records": 1583,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.9566,
+        "mae": 1.514
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.9632,
+        "mae": 1.327
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.9557,
+        "mae": 1.522
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.9318,
+        "mae": 2.618
+      }
+    ]
+  },
+  "Arecanut": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.9465,
+    "best_mae": 0.317,
+    "n_records": 1537,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.9403,
+        "mae": 0.333
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.9465,
+        "mae": 0.317
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.9331,
+        "mae": 0.354
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.6277,
+        "mae": 0.991
+      }
+    ]
+  },
+  "Khesari": {
+    "best_model_name": "GradientBoosting",
+    "best_r2": 0.6269,
+    "best_mae": 0.137,
+    "n_records": 1447,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.6198,
+        "mae": 0.134
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.607,
+        "mae": 0.136
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.6269,
+        "mae": 0.137
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.4596,
+        "mae": 0.175
+      }
+    ]
+  },
+  "Safflower": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.5424,
+    "best_mae": 0.119,
+    "n_records": 1437,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.5424,
+        "mae": 0.119
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.4768,
+        "mae": 0.123
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.4875,
+        "mae": 0.125
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.2086,
+        "mae": 0.15
+      }
+    ]
+  },
+  "Jute": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.8562,
+    "best_mae": 1.1,
+    "n_records": 1407,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.8325,
+        "mae": 1.14
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.8562,
+        "mae": 1.1
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.8504,
+        "mae": 1.159
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.6755,
+        "mae": 1.666
+      }
+    ]
+  },
+  "Guar seed": {
+    "best_model_name": "XGBoost",
+    "best_r2": 0.8984,
+    "best_mae": 0.132,
+    "n_records": 1356,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.8984,
+        "mae": 0.132
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.7211,
+        "mae": 0.168
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": -0.4975,
+        "mae": 0.226
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.8058,
+        "mae": 0.299
+      }
+    ]
+  },
+  "Cashewnut": {
+    "best_model_name": "BayesianRidge",
+    "best_r2": 0.3838,
+    "best_mae": 0.168,
+    "n_records": 1052,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.2752,
+        "mae": 0.118
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.3593,
+        "mae": 0.109
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.3023,
+        "mae": 0.111
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.3838,
+        "mae": 0.168
+      }
+    ]
+  },
+  "Coconut": {
+    "best_model_name": "RandomForest",
+    "best_r2": 0.7655,
+    "best_mae": 1.268,
+    "n_records": 1047,
+    "all_results": [
+      {
+        "model": "XGBoost",
+        "r2": 0.7313,
+        "mae": 1.327
+      },
+      {
+        "model": "RandomForest",
+        "r2": 0.7655,
+        "mae": 1.268
+      },
+      {
+        "model": "GradientBoosting",
+        "r2": 0.6829,
+        "mae": 1.417
+      },
+      {
+        "model": "BayesianRidge",
+        "r2": 0.2603,
+        "mae": 3.505
+      }
+    ]
+  }
+}

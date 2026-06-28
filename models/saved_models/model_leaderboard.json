@@ -1,0 +1,79 @@
+[
+  {
+    "Model": "XGBoost",
+    "R\u00b2": 0.9562,
+    "MAE": 0.659,
+    "RMSE": 1.988,
+    "Time_s": 0.9
+  },
+  {
+    "Model": "RandomForest",
+    "R\u00b2": 0.9545,
+    "MAE": 0.603,
+    "RMSE": 2.026,
+    "Time_s": 21.3
+  },
+  {
+    "Model": "GradientBoosting",
+    "R\u00b2": 0.9518,
+    "MAE": 0.68,
+    "RMSE": 2.085,
+    "Time_s": 64.0
+  },
+  {
+    "Model": "MLPRegressor",
+    "R\u00b2": 0.9477,
+    "MAE": 0.707,
+    "RMSE": 2.172,
+    "Time_s": 36.0
+  },
+  {
+    "Model": "LinearRegression",
+    "R\u00b2": 0.9257,
+    "MAE": 0.805,
+    "RMSE": 2.589,
+    "Time_s": 0.1
+  },
+  {
+    "Model": "Ridge",
+    "R\u00b2": 0.9257,
+    "MAE": 0.805,
+    "RMSE": 2.589,
+    "Time_s": 0.0
+  },
+  {
+    "Model": "Lasso",
+    "R\u00b2": 0.9257,
+    "MAE": 0.801,
+    "RMSE": 2.589,
+    "Time_s": 0.0
+  },
+  {
+    "Model": "BayesianRidge",
+    "R\u00b2": 0.9257,
+    "MAE": 0.805,
+    "RMSE": 2.589,
+    "Time_s": 0.1
+  },
+  {
+    "Model": "HuberRegressor",
+    "R\u00b2": 0.9256,
+    "MAE": 0.776,
+    "RMSE": 2.592,
+    "Time_s": 0.3
+  },
+  {
+    "Model": "KNeighbors",
+    "R\u00b2": 0.923,
+    "MAE": 1.081,
+    "RMSE": 2.636,
+    "Time_s": 6.6
+  },
+  {
+    "Model": "DecisionTree",
+    "R\u00b2": 0.9217,
+    "MAE": 0.718,
+    "RMSE": 2.659,
+    "Time_s": 1.0
+  }
+]

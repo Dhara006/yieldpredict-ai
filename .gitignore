@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+data/cache/
+models/saved_models/model_*.pkl
+models/saved_models/lstm_model.h5
