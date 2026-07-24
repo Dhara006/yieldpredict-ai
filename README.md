@@ -28,7 +28,7 @@ Overall, **XGBoost comes out on top across crops on average** (R² = 0.956), but
 
 ## Why the risk scoring is deterministic
 
-This is the design decision I care about most in this repo. The risk/premium component uses Beta-Binomial posterior inference — but deliberately **without** random sampling (no Monte Carlo draws under the hood).
+This is the design decision I care about most in this repo. The risk/premium component uses Beta-Binomial posterior inference — but deliberately **without** random sampling. I tested with Monte Carlo, but the results were not deterministic and were slow.
 
 The reasoning: if this is ever going to inform an actual premium number for an actual farmer, it can't give a slightly different answer every time someone re-runs it on the same inputs. A stochastic risk score is fine for a research notebook, but it's a real problem for anything resembling an audit trail or a regulatory conversation. Computing the posterior in closed form means the same district + crop + season always produces the exact same risk score — reproducible by design, not just by coincidence.
 
